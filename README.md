@@ -1,1 +1,1 @@
-# Assigment-1-C-programming-
+# Assigment-C-programming-
