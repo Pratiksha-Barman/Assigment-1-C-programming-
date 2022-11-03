@@ -1,1 +1,38 @@
+// Write a program to calculate the sum of two numbers.
+#include<stdio.h>
+int main()
+{
+    float n1,n2,sum;
+    printf("Enter the two numbers\n");
+    scanf("%f %f",&n1,&n2);
+    sum=n1+n2;
+    printf("The sum of %.2f and %.2f is %.2f",n1,n2,sum);
+    return 0;
+}
 
+// Write a program to calculate the area of a circle.
+#include<stdio.h>
+#define pi 3.14
+int main()
+{
+    float r,area;
+    printf("Enter the radius of the circle\n");
+    scanf("%f",&r);
+    area=pi*r*r;
+    printf("The area of the circle is %.2f",area);
+    return 0;
+}
+
+//Write a program to calculate the volume of a Cuboid.
+#include<stdio.h>
+int main()
+{
+    float l,b,h,vol;
+    printf("Enter the length, breadth and height of the cuboid\n");
+    scanf("%f %f %f",&l,&b,&h);
+    vol=l*b*h;
+    printf("The volume of the cuboid is %.2f",vol);
+    return 0;
+}
+
+//Write a program to calculate the simple interest
