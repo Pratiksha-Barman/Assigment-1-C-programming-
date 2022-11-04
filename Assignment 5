@@ -36,3 +36,79 @@ int main()
 }
 
 //Write a program to calculate the simple interest
+#include<stdio.h>
+int main()
+{
+    float l,b,h,si;
+    printf("Enter the Principal amount, Rate of Interest and Time Period in year\n");
+    scanf("%f %f %f",&l,&b,&h);
+    si=(l*b*h)/100;
+    printf("Simple Intrest is %.2f",si);
+    return 0;
+}
+
+//Write a program to calculate the area of a rectangle
+#include<stdio.h>
+int main()
+{
+    float l,b,area;
+    printf("Enter the length and width of the rectangle\n");
+    scanf("%f %f",&l,&b);
+    area=l*b;
+    printf("The area of the rectangle is %.2f",area);
+    return 0;
+}
+
+//Write a program to calculate the average of three numbers
+#include<stdio.h>
+int main()
+{
+    float a,b,c,avg;
+    printf("Enter the three numbers\n");
+    scanf("%f %f %f",&a,&b,&c);
+   avg=(a+b+c)/3;
+    printf("The Average of %.2f %.2f %.2f is %.2f",a,b,c,avg);
+    return 0;
+}
+
+//Write a program to calculate the square of a given number.
+#include<stdio.h>
+int main()
+{
+    int a,sq;
+    printf("Enter the number\n");
+    scanf("%d",&a);
+   sq=a*a;
+    printf("The Square of %d is %d",a,sq);
+    return 0;
+}
+
+//Write a program which takes a character as input and print its ASCII code.
+#include<stdio.h>
+int main()
+{
+    char a;
+    printf("Enter the character\n");
+    scanf("%c",&a);
+    printf("The ASCII code of %c is %d",a,a);
+    return 0;
+}
+
+//Write a program to calculate the profit percentage upon selling a product. Cost price
+and selling price are given by the user.
+#include<stdio.h>
+int main()
+{
+    float s,c,profit,per_profit;
+    printf("Enter the Selling price\n");
+    scanf("%f",&s);
+    printf("Enter the Cost price\n");
+    scanf("%f",&c);
+    profit=s-c;
+    per_profit=(profit/c)*100;
+    printf("The the profit percentage is %f",per_profit);
+    return 0;
+}
+
+//Write a program to calculate the area of a triangle where base and height of the
+triangle are given.
