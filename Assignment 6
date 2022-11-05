@@ -20,3 +20,5 @@ int main()
   printf("The last digit of %d is %d \n",num,Ldigit);
   return 0;
 }
+
+//Write a program to find first digit of a given three digit number
