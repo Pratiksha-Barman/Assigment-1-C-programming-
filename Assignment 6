@@ -76,6 +76,4 @@ int main()
     return 0;
 }
 
-//Write a program to make the last digit of a number stored in a variable as zero.
-(Example - if x=2345 then make it x=2340)
 
