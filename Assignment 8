@@ -42,4 +42,42 @@ int main()
     return 0;
 }
 
-//
+//Write a program to check whether a given year is a leap year or not.
+#include <stdio.h>
+int main() 
+{
+    int year;
+    printf("Enter a year \n");
+    scanf("%d",& year);
+        if(year%4==0)
+        printf("The year is leap year");
+        else
+        printf("The year is non-leap year");
+    return 0;
+}
+
+//Write a program to find greater among three numbers. If two or three numbers are identical and greatest among all then print it only once.
+#include <stdio.h>
+int main() 
+{
+    int a,b,c;
+    printf("Enter the three numbers \n");
+    scanf("%d %d %d",&a,&b,&c);
+        if(a>b && a>c)
+        printf("%d is greater",a);
+        else if (b>a && b>c)
+        printf("%d is greater",b);
+        else if (c>a && c>b)
+        printf("%d is greater",c);
+        else if(a==b && a>c)
+        printf("%d is greater",a);
+        else if(a==c && a>b)
+        printf("%d is greater",a);
+        else if(c==b && b>a)
+        printf("%d is greater",c);
+        else
+        printf("%d is greater",a);
+    return 0;
+}
+
+//Write a program to check whether a given character is an alphabet (uppercase), an alphabet (lower case), a digit or a special character.
