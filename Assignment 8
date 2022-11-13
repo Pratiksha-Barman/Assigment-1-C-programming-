@@ -162,3 +162,55 @@ void main()
 }
 
 //Write a program to find the nature of roots of a quadratic equation.
+#include <stdio.h>
+void main() 
+{
+    int a,b,c,disp;
+    printf("Enter the values of a,b and c\n");
+	scanf(“%d %d %d",&a,&b,&c);
+	disp=b*b-4*a*c;
+	if(disp>0)
+	printf("The roots are real and unique");
+	else if(disp==0)
+	printf("The roots are real and equal");
+	else
+	printf("The roots are real and imaginery");
+	
+}
+
+//Write a C program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following:
+//Percentage >= 90% : Grade A
+//Percentage >= 80% : Grade B
+//Percentage >= 70% : Grade C
+//Percentage >= 60% : Grade D
+//Percentage >= 40% : Grade E
+//Percentage < 40% : Grade F
+#include<stdio.h>
+void main()
+{
+    int arr[5],sum=0,i,avg,per;
+    printf("Enter the marks of Physics, Chemistry, Biology, Mathematics and Computer\n");
+    for(i=0;i<=5;i++)
+    {
+    scanf("%d",&arr[i]);
+    }
+    for(i=0;i<=5;i++)
+    {
+    sum=sum+arr[i];
+    i++;
+    }
+    avg=sum/5;
+    per=avg*100;
+    if(per>=90 && per<=100)
+    printf("Grade A");
+    else if(per>=80 && per<=89)
+    printf("Grade B");
+    else if(per>=70 && per<=79)
+    printf("Grade C");
+    else if(per>=60 && per<=69)
+    printf("Grade D");
+    else if(per>=50 && per<=59)
+    printf("Grade E");
+    else
+    printf("Grade F");
+}
