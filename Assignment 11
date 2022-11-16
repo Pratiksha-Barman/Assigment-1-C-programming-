@@ -13,3 +13,93 @@ void main()
 }
 
 //Write a program to calculate sum of first N even natural numbers
+#include<stdio.h>
+void main()
+{
+    int i,N, sum=0;
+    printf("Enter the value of N \n");
+    scanf("%d",&N);
+    for(i=1;i<=N;i++)
+    {
+        if(i%2==0)
+        sum=sum+i;
+    }
+    printf("The sum of first N numbers is %d",sum);
+}
+
+//Write a program to calculate sum of first N odd natural numbers
+#include<stdio.h>
+void main()
+{
+    int i,N, sum=0;
+    printf("Enter the value of N \n");
+    scanf("%d",&N);
+    for(i=1;i<=N;i++)
+    {
+        if(i%2!=0)
+        sum=sum+i;
+    }
+    printf("The sum of first N numbers is %d",sum);
+}
+
+//Write a program to calculate sum of squares of first N natural numbers
+#include<stdio.h>
+void main()
+{
+    int i,N,x, sum=0;
+    printf("Enter the value of N \n");
+    scanf("%d",&N);
+    for(i=1;i<=N;i++)
+    {
+        x=i*i;
+        sum=sum+x;
+    }
+    printf("The sum of first N numbers is %d",sum);
+}
+
+//Write a program to calculate sum of cubes of first N natural numbers
+#include<stdio.h>
+void main()
+{
+    int i,N,x, sum=0;
+    printf("Enter the value of N \n");
+    scanf("%d",&N);
+    for(i=1;i<=N;i++)
+    {
+        x=i*i*i;
+        sum=sum+x;
+    }
+    printf("The sum of first N numbers is %d",sum);
+}
+
+//Write a program to calculate factorial of a number
+#include<stdio.h>
+void main()
+{
+    int i,num,fact=1;
+    printf("Enter the number \n");
+    scanf("%d",&num);
+    for(i=1;i<=num;i++)
+    {
+    fact=fact*i;
+    }
+    printf("The factorial of %d is %d",num,fact);
+}
+
+//Write a program to count digits in a given number
+#include <stdio.h>  
+int main()  
+{  
+   int n,count=0;
+   printf("Enter a number \n");  
+   scanf("%d",&n);  
+   while(n!=0)  
+   {  
+       n=n/10;  
+       count++;  
+   }  
+   printf("The number of digits is %d",count);  
+    return 0;  
+} 
+
+//Write a program to check whether a given number is a Prime number or not
